@@ -472,6 +472,28 @@ typedef enum {
 ///----------------
 
 /**
+ Return a base64 encoded representation of the data.
+ 
+ @param data The data to be encoded.
+ 
+ @discussion Return a base64 encoded representation of the data.
+ 
+ @return A base64 encoded representation of the data.
+ */
+extern NSString * AFBase64EncodedStringFromData(NSData *data);
+
+/**
+ Return a base64 encoded representation of the string.
+ 
+ @param string The string to be encoded.
+ 
+ @discussion Return a base64 encoded representation of the string.
+ 
+ @return A base64 encoded representation of the string.
+ */
+extern NSString * AFBase64EncodedStringFromString(NSString *string);
+
+/**
  Returns a query string constructed by a set of parameters, using the specified encoding.
  
  @param parameters The parameters used to construct the query string
